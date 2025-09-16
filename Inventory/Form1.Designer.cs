@@ -40,11 +40,13 @@
             this.dtPickerExpDate = new System.Windows.Forms.DateTimePicker();
             this.Qty = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.txtSellPrice = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.richTextDescription = new System.Windows.Forms.RichTextBox();
             this.btnAddProduct = new System.Windows.Forms.Button();
+            this.gridViewProductList = new System.Windows.Forms.DataGridView();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.txtSellPrice = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,20 +132,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Sell Price";
             // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(122, 218);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantity.TabIndex = 10;
-            // 
-            // txtSellPrice
-            // 
-            this.txtSellPrice.Location = new System.Drawing.Point(122, 249);
-            this.txtSellPrice.Name = "txtSellPrice";
-            this.txtSellPrice.Size = new System.Drawing.Size(100, 20);
-            this.txtSellPrice.TabIndex = 11;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -171,16 +159,39 @@
             this.btnAddProduct.UseVisualStyleBackColor = true;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
+            // gridViewProductList
+            // 
+            this.gridViewProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewProductList.Location = new System.Drawing.Point(12, 288);
+            this.gridViewProductList.Name = "gridViewProductList";
+            this.gridViewProductList.Size = new System.Drawing.Size(776, 150);
+            this.gridViewProductList.TabIndex = 15;
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Location = new System.Drawing.Point(122, 218);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantity.TabIndex = 16;
+            // 
+            // txtSellPrice
+            // 
+            this.txtSellPrice.Location = new System.Drawing.Point(122, 248);
+            this.txtSellPrice.Name = "txtSellPrice";
+            this.txtSellPrice.Size = new System.Drawing.Size(100, 20);
+            this.txtSellPrice.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtSellPrice);
+            this.Controls.Add(this.txtQuantity);
+            this.Controls.Add(this.gridViewProductList);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.richTextDescription);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtSellPrice);
-            this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Qty);
             this.Controls.Add(this.dtPickerExpDate);
@@ -194,6 +205,7 @@
             this.Name = "Form1";
             this.Text = "Sell Price";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,11 +225,12 @@
         private System.Windows.Forms.DateTimePicker dtPickerExpDate;
         private System.Windows.Forms.Label Qty;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtQuantity;
-        private System.Windows.Forms.TextBox txtSellPrice;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox richTextDescription;
         private System.Windows.Forms.Button btnAddProduct;
+        private System.Windows.Forms.DataGridView gridViewProductList;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.TextBox txtSellPrice;
     }
 }
 
